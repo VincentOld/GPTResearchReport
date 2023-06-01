@@ -1,0 +1,568 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Self-Instruct自动生成微调数据 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="学术问答数据集调研.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../天工GPT调研/天工GPT调研.html">
+            
+                <a href="../天工GPT调研/天工GPT调研.html">
+            
+                    
+                    天工GPT调研
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../相关GPT调研/相关GPT调研.html">
+            
+                <a href="../相关GPT调研/相关GPT调研.html">
+            
+                    
+                    相关GPT调研
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    相关技术调研
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    第一章：训练微调相关技术
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../Chapter2/微调范式对比.html">
+            
+                <a href="../Chapter2/微调范式对比.html">
+            
+                    
+                    节省显存的微调推理技术对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../Chapter2/大模型微调技术：fine-tune、parameter-efficient fine-tune和prompt-tune.html">
+            
+                <a href="../Chapter2/大模型微调技术：fine-tune、parameter-efficient fine-tune和prompt-tune.html">
+            
+                    
+                    LLM三种微调技术对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../Chapter2/Prompt-Tuning、Instruction-Tuning和Chain-of-Thought.html">
+            
+                <a href="../Chapter2/Prompt-Tuning、Instruction-Tuning和Chain-of-Thought.html">
+            
+                    
+                    LLM三种训练技术对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../Chapter2/思维链.html">
+            
+                <a href="../Chapter2/思维链.html">
+            
+                    
+                    思维链简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    第二章：定制化GPT
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../Chapter1/根据自己数据库让GPT作答.html">
+            
+                <a href="../Chapter1/根据自己数据库让GPT作答.html">
+            
+                    
+                    根据自己数据库让GPT作答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../Chapter1/训练部署自己的羊驼 Alpaca-LoRA.html">
+            
+                <a href="../Chapter1/训练部署自己的羊驼 Alpaca-LoRA.html">
+            
+                    
+                    训练部署自己的羊驼 Alpaca-LoRA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../Chapter1/训练部署自己的ChatGLM-6B.html">
+            
+                <a href="../Chapter1/训练部署自己的ChatGLM-6B.html">
+            
+                    
+                    训练部署自己的ChatGLM-6B
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../Chapter1/Windows+6GB显卡版本和CPU版本的本地部署ChatGLM-6B.html">
+            
+                <a href="../Chapter1/Windows+6GB显卡版本和CPU版本的本地部署ChatGLM-6B.html">
+            
+                    
+                    Windows+6GB显+CPU本地部署ChatGLM-6B.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    第三章：数据底座方法与调研
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.3.1" data-path="Self-Instruct数据.html">
+            
+                <a href="Self-Instruct数据.html">
+            
+                    
+                    Self-Instruct自动生成微调数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="学术问答数据集调研.html">
+            
+                <a href="学术问答数据集调研.html">
+            
+                    
+                    学术问答数据集调研
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <span>
+            
+                    
+                    第四章：其他相关知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../Chapter4/Lamini.html">
+            
+                <a href="../Chapter4/Lamini.html">
+            
+                    
+                    Lamini LLM引擎学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="../Chapter4/GPT与知识图谱.html">
+            
+                <a href="../Chapter4/GPT与知识图谱.html">
+            
+                    
+                    GPT与知识图谱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="../Chapter4/Entailment Trees论文学习笔记.html">
+            
+                <a href="../Chapter4/Entailment Trees论文学习笔记.html">
+            
+                    
+                    Entailment Trees论文学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="../Chapter4/METGEN论文学习笔记.html">
+            
+                <a href="../Chapter4/METGEN论文学习笔记.html">
+            
+                    
+                    METGEN论文学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../技术框架/技术框架.html">
+            
+                <a href="../技术框架/技术框架.html">
+            
+                    
+                    毕设技术框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Self-Instruct自动生成微调数据</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E09;&#x3001;self-instruct">&#x4E09;&#x3001;Self-Instruct</h1>
+<p>&#x53C2;&#x8003;&#x94FE;&#x63A5;&#xFF1A;</p>
+<p><a href="https://mp.weixin.qq.com/s/lcPta_eJmNu5qxlWVJk_dA" target="_blank">&#x8F7B;&#x677E;&#x6253;&#x9020;&#x5BB6;&#x7528;&#x7248;GPT-4&#xFF01;&#x5FAE;&#x8F6F;&#x5F00;&#x6E90;&#x5FAE;&#x8C03;&#x6307;&#x4EE4;&#x96C6;&#xFF1A;&#x6548;&#x679C;&#x4E0D;&#x8F93;&#x539F;&#x7248;&#xFF0C;&#x4E2D;&#x82F1;&#x53CC;&#x8BED;&#x90FD;&#x80FD;&#x7528;</a></p>
+<p>&#x5FAE;&#x8C03;&#x6570;&#x636E;&#x94FE;&#x63A5;&#xFF1A;<a href="https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM" target="_blank">https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM</a></p>
+<p>&#x8BBA;&#x6587;&#x94FE;&#x63A5;&#xFF1A;<a href="https://arxiv.org/pdf/2304.03277.pdf" target="_blank">https://arxiv.org/pdf/2304.03277.pdf</a></p>
+<hr>
+<ol>
+<li>&#x4F7F;&#x7528;GPT-4&#x6A21;&#x578B;&#x6765;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x6240;&#x9700;&#x7684;&#x5FAE;&#x8C03;&#x6307;&#x4EE4;&#x6570;&#x636E;&#x3002;GPT-4&#x751F;&#x6210;&#x7684;instruction-following&#x6570;&#x636E;&#x8868;&#x73B0;&#x51FA;&#x66F4;&#x5F3A;&#x5927;&#x7684;&#x5BF9;&#x9F50;&#x6027;&#x80FD;&#x3002;</li>
+<li><strong>&#x4E2D;&#x6587;Instruction-Following Data&#xFF1A;</strong>&#x4F7F;&#x7528;ChatGPT&#x5C06;5.2&#x4E07;&#x6761;&#x6307;&#x4EE4;&#x7FFB;&#x8BD1;&#x6210;&#x4E2D;&#x6587;&#xFF0C;&#x5E76;&#x8981;&#x6C42;GPT-4&#x7528;&#x4E2D;&#x6587;&#x56DE;&#x7B54;&#x8FD9;&#x4E9B;&#x6307;&#x4EE4;&#xFF0C;&#x5E76;&#x4EE5;&#x6B64;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;LLaMA&#x7684;&#x4E2D;&#x6587;instruction-following&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x7814;&#x7A76;&#x6307;&#x4EE4;&#x8C03;&#x4F18;&#x7684;&#x8DE8;&#x8BED;&#x8A00;&#x6CDB;&#x5316;&#x80FD;&#x529B;&#x3002;</li>
+<li><strong>&#x5BF9;&#x6BD4;&#x6570;&#x636E;&#xFF08;Comparison Data&#xFF09;&#xFF1A;</strong>&#x8981;&#x6C42;GPT-4&#x5BF9;&#x81EA;&#x5DF1;&#x7684;&#x56DE;&#x590D;&#x63D0;&#x4F9B;&#x4ECE;1&#x5230;10&#x7684;&#x8BC4;&#x5206;&#xFF0C;&#x5E76;&#x5BF9;GPT-4, GPT-3.5&#x548C;OPT-IML&#x8FD9;&#x4E09;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x56DE;&#x590D;&#x8FDB;&#x884C;&#x8BC4;&#x5206;&#xFF0C;&#x4EE5;&#x8BAD;&#x7EC3;&#x5956;&#x52B1;&#x6A21;&#x578B;&#x3002;</li>
+<li>&#x7814;&#x7A76;&#x4EBA;&#x5458;&#x57FA;&#x4E8E;LLaMA 7B checkpoint<strong>&#x6709;&#x76D1;&#x7763;&#x5FAE;&#x8C03;&#x540E;</strong>&#x8BAD;&#x7EC3;&#x5F97;&#x5230;&#x4E86;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#xFF1A;LLaMA-GPT4&#x662F;&#x5728;GPT-4&#x751F;&#x6210;&#x7684;5.2&#x4E07;&#x6761;&#x82F1;&#x6587;instruction-following&#x6570;&#x636E;&#x4E0A;&#x8BAD;&#x7EC3;&#x7684;&#xFF1B;LLaMA-GPT4-CN&#x662F;&#x5728;GPT-4&#x7684;5.2&#x4E07;&#x6761;&#x4E2D;&#x6587;instruction-following&#x6570;&#x636E;&#x4E0A;&#x8BAD;&#x7EC3;&#x7684;&#x3002;</li>
+<li><strong>&#x5956;&#x52B1;&#x6A21;&#x578B;&#xFF1A;</strong>&#x7814;&#x7A76;&#x4EBA;&#x5458;&#x4F7F;&#x7528;GPT-4&#x521B;&#x5EFA;&#x4E86;&#x5BF9;&#x6BD4;&#x6570;&#x636E;&#xFF1B;&#x4E3A;&#x4E86;&#x8BC4;&#x4F30;&#x6570;&#x636E;&#x8D28;&#x91CF;&#xFF0C;&#x7814;&#x7A76;&#x4EBA;&#x5458;&#x8BAD;&#x7EC3;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;OPT 1.3B&#x7684;&#x5956;&#x52B1;&#x6A21;&#x578B;&#xFF0C;&#x4EE5;&#x5BF9;&#x4E0D;&#x540C;&#x7684;&#x56DE;&#x590D;&#x8FDB;&#x884C;&#x8BC4;&#x5206;&#xFF1A;&#x5BF9;&#x4E00;&#x4E2A;&#x63D0;&#x793A;&#x548C;K&#x4E2A;&#x56DE;&#x590D;&#xFF0C;GPT-4&#x4E3A;&#x6BCF;&#x4E2A;&#x56DE;&#x590D;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;1&#x5230;10&#x4E4B;&#x95F4;&#x7684;&#x8BC4;&#x5206;&#x3002;</li>
+<li>&#x6548;&#x679C;&#x8BC4;&#x4F30;&#xFF1A;<strong>&#x4EBA;&#x7C7B;&#x8BC4;&#x4F30;3H&#x6807;&#x51C6;</strong>&#x3002;&#x57FA;&#x4E8E;HHH&#x5BF9;&#x9F50;&#x6807;&#x51C6;&#xFF0C;&#x7814;&#x7A76;&#x4EBA;&#x5458;&#x4F7F;&#x7528;&#x4F17;&#x5305;&#x5E73;&#x53F0;Amazon Mechanical Turk&#x5BF9;&#x6A21;&#x578B;&#x751F;&#x6210;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x4EBA;&#x5DE5;&#x8BC4;&#x4F30;&#x3002;</li>
+</ol>
+<pre><code>&#x5E2E;&#x52A9;&#x6027;&#xFF08;helpfulness&#xFF09;&#xFF1A;&#x662F;&#x5426;&#x80FD;&#x5E2E;&#x52A9;&#x4EBA;&#x7C7B;&#x5B9E;&#x73B0;&#x4ED6;&#x4EEC;&#x7684;&#x76EE;&#x6807;&#xFF0C;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x51C6;&#x786E;&#x56DE;&#x7B54;&#x95EE;&#x9898;&#x7684;&#x6A21;&#x578B;&#x662F;&#x6709;&#x5E2E;&#x52A9;&#x7684;&#x3002;
+&#x8BDA;&#x5B9E;&#x6027;&#xFF08;honesty&#xFF09;&#xFF1A;&#x662F;&#x5426;&#x63D0;&#x4F9B;&#x771F;&#x5B9E;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x5728;&#x5FC5;&#x8981;&#x65F6;&#x8868;&#x8FBE;&#x5176;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x4EE5;&#x907F;&#x514D;&#x8BEF;&#x5BFC;&#x4EBA;&#x7C7B;&#x7528;&#x6237;&#xFF0C;&#x4E00;&#x4E2A;&#x63D0;&#x4F9B;&#x865A;&#x5047;&#x4FE1;&#x606F;&#x7684;&#x6A21;&#x578B;&#x662F;&#x4E0D;&#x8BDA;&#x5B9E;&#x7684;&#x3002;
+&#x65E0;&#x5BB3;&#x6027;&#xFF08;harmlessness&#xFF09;&#xFF1A;&#x662F;&#x5426;&#x4E0D;&#x4F1A;&#x5BF9;&#x4EBA;&#x7C7B;&#x9020;&#x6210;&#x4F24;&#x5BB3;&#xFF0C;&#x4E00;&#x4E2A;&#x4EA7;&#x751F;&#x4EC7;&#x6068;&#x8A00;&#x8BBA;&#x6216;&#x63D0;&#x5021;&#x66B4;&#x529B;&#x7684;&#x6A21;&#x578B;&#x4E0D;&#x662F;&#x65E0;&#x5BB3;&#x7684;&#x3002;
+</code></pre><p><img src="pics/Self-Instruct/image-20230506102555861.png" alt="image-20230506102555861" style="zoom:33%;"> </p>
+<p><strong>GPT-4&#x81EA;&#x52A8;&#x8BC4;&#x4F30;</strong>&#xFF1A;&#x53D7; Vicuna &#x7684;&#x542F;&#x53D1;&#xFF0C;&#x7814;&#x7A76;&#x4EBA;&#x5458;&#x4E5F;&#x9009;&#x62E9;&#x7528;GPT-4&#x6765;&#x8BC4;&#x4F30;&#x4E0D;&#x540C;&#x804A;&#x5929;&#x673A;&#x5668;&#x4EBA;&#x6A21;&#x578B;&#x5BF9;80&#x4E2A;&#x672A;&#x89C1;&#x8FC7;&#x7684;&#x95EE;&#x9898;&#x6240;&#x751F;&#x6210;&#x56DE;&#x7B54;&#x7684;&#x8D28;&#x91CF;&#xFF0C;&#x4ECE; LLaMA-GPT-4(7B)&#x548C; GPT-4&#x6A21;&#x578B;&#x4E2D;&#x6536;&#x96C6;&#x56DE;&#x590D;&#xFF0C;&#x5E76;&#x4ECE;&#x4EE5;&#x524D;&#x7684;&#x7814;&#x7A76;&#x4E2D;&#x83B7;&#x5F97;&#x5176;&#x4ED6;&#x6A21;&#x578B;&#x7684;&#x7B54;&#x6848;&#xFF0C;&#x7136;&#x540E;&#x8981;&#x6C42;GPT-4&#x5BF9;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x7684;&#x56DE;&#x590D;&#x8D28;&#x91CF;&#x8FDB;&#x884C;&#x8BC4;&#x5206;&#xFF0C;&#x8BC4;&#x5206;&#x8303;&#x56F4;&#x4ECE;1&#x5230;10&#xFF0C;&#x5E76;&#x5C06;&#x7ED3;&#x679C;&#x4E0E;&#x5176;&#x4ED6;&#x5F3A;&#x7ADE;&#x4E89;&#x6A21;&#x578B;(ChatGPT &#x548C; GPT-4)&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;</p>
+<p>&#x7ED3;&#x679C;&#x663E;&#x793A;&#xFF1A;&#x53CD;&#x9988;&#x6570;&#x636E;&#x548C;&#x5956;&#x52B1;&#x6A21;&#x578B;&#x5BF9;&#x63D0;&#x9AD8; LLaMA &#x7684;&#x6027;&#x80FD;&#x662F;&#x6709;&#x6548;&#x7684;&#xFF1B;&#x7528;GPT-4&#x5BF9;LLaMA&#x8FDB;&#x884C;&#x6307;&#x4EE4;&#x8C03;&#x4F18;&#xFF0C;&#x5F80;&#x5F80;&#x6BD4;&#x7528;text-davinci-003&#x8C03;&#x4F18;&#xFF08;&#x5373;Alpaca&#xFF09;&#x548C;&#x4E0D;&#x8C03;&#x4F18;&#xFF08;&#x5373;LLaMA&#xFF09;&#x7684;&#x6027;&#x80FD;&#x66F4;&#x9AD8;&#xFF1B;7B LLaMA GPT4&#x7684;&#x6027;&#x80FD;&#x8D85;&#x8FC7;&#x4E86;13B Alpaca&#x548C;LLaMA&#xFF0C;&#x4F46;&#x548C;GPT-4&#x7B49;&#x5927;&#x578B;&#x5546;&#x4E1A;&#x804A;&#x5929;&#x673A;&#x5668;&#x4EBA;&#x76F8;&#x6BD4;&#xFF0C;&#x4ECD;&#x6709;&#x5DEE;&#x8DDD;&#x3002;</p>
+<p><img src="pics/Self-Instruct/image-20230506102752472.png" alt="image-20230506102752472" style="zoom:40%;"> </p>
+<p><strong>&#x975E;&#x81EA;&#x7136;&#x6307;&#x4EE4;&#x8BC4;&#x4F30;&#xFF08;Unnatural Instruction Evaluation&#xFF09;</strong>&#xFF1A;&#x4ECE;&#x5E73;&#x5747;ROUGE-L&#x5F97;&#x5206;&#x6765;&#x770B;&#xFF0C;Alpaca&#x4F18;&#x4E8E;LLaMA-GPT 4&#x548C;GPT-4&#xFF0C;&#x53EF;&#x4EE5;&#x6CE8;&#x610F;&#x5230;&#xFF0C;LLaMA-GPT4&#x548C;GPT4&#x5728;ground truth<strong>&#x56DE;&#x590D;&#x957F;&#x5EA6;&#x589E;&#x52A0;&#x65F6;&#x9010;&#x6E10;&#x8868;&#x73B0;&#x5F97;&#x66F4;&#x597D;</strong>&#xFF0C;&#x6700;&#x7EC8;&#x5728;&#x957F;&#x5EA6;&#x8D85;&#x8FC7;4&#x65F6;&#x8868;&#x73B0;&#x51FA;&#x66F4;&#x9AD8;&#x7684;&#x6027;&#x80FD;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5F53;&#x573A;&#x666F;&#x66F4;&#x5177;&#x521B;&#x9020;&#x6027;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x66F4;&#x597D;&#x5730;&#x9075;&#x5FAA;&#x6307;&#x4EE4;&#x3002;</p>
+<ol>
+<li>&#x4EC5;&#x5C31;GPT-4&#x7684;&#x7ED3;&#x679C;&#x800C;&#x8A00;&#xFF0C;<strong>&#x7FFB;&#x8BD1;&#x540E;&#x7684;&#x56DE;&#x590D;&#x6BD4;&#x4E2D;&#x6587;&#x751F;&#x6210;&#x7684;&#x56DE;&#x590D;&#x8868;&#x73B0;&#x5F97;&#x66F4;&#x597D;</strong>&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x56E0;&#x4E3A;GPT-4&#x662F;&#x5728;&#x6BD4;&#x4E2D;&#x6587;&#x66F4;&#x4E30;&#x5BCC;&#x7684;&#x82F1;&#x6587;&#x8BED;&#x6599;&#x5E93;&#x4E2D;&#x8BAD;&#x7EC3;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5177;&#x6709;&#x66F4;&#x5F3A;&#x7684;&#x82F1;&#x6587;instruction-following&#x80FD;&#x529B;&#x3002;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="学术问答数据集调研.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 学术问答数据集调研">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Self-Instruct自动生成微调数据","level":"1.4.3.1","depth":3,"next":{"title":"学术问答数据集调研","level":"1.4.3.2","depth":3,"path":"Chapter3/学术问答数据集调研.md","ref":"Chapter3/学术问答数据集调研.md","articles":[]},"previous":{"title":"第三章：数据底座方法与调研","level":"1.4.3","depth":2,"ref":"","articles":[{"title":"Self-Instruct自动生成微调数据","level":"1.4.3.1","depth":3,"path":"Chapter3/Self-Instruct数据.md","ref":"Chapter3/Self-Instruct数据.md","articles":[]},{"title":"学术问答数据集调研","level":"1.4.3.2","depth":3,"path":"Chapter3/学术问答数据集调研.md","ref":"Chapter3/学术问答数据集调研.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter3/Self-Instruct数据.md","mtime":"2023-05-09T05:23:02.402Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T03:46:06.651Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
