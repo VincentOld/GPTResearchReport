@@ -28,7 +28,7 @@
 1. 概述：一个典型的ChatPDF类似应用，类似相关项目很多如：
    [https://www.chatpdf.com](https://www.chatpdf.com/)
    [Ask Your PDF - Interactive PDF Conversations powered by ChatGPT](https://askyourpdf.com/)
-2. 主要的实现原理：将文章进行分割，然后与query进行查询匹配，将相关段落返回，输入到GPT中得到最后的答案。
 
-<img src="pics/天工GPT调研/image-20230601113055732.png" alt="image-20230601113055732" style="zoom:50%;" />  
+2. 主要的实现原理：将文章进行分割，然后与query进行查询匹配，将相关段落返回，输入到GPT中得到最后的答案。
+   <img src="pics/天工GPT调研/image-20230601113055732.png" alt="image-20230601113055732" style="zoom:50%;" /> 
 
