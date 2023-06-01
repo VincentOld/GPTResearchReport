@@ -1,0 +1,561 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>GPT与知识图谱 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Entailment Trees论文学习笔记.html" />
+    
+    
+    <link rel="prev" href="Lamini.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../天工GPT调研/天工GPT调研.html">
+            
+                <a href="../天工GPT调研/天工GPT调研.html">
+            
+                    
+                    天工GPT调研
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../相关GPT调研/相关GPT调研.html">
+            
+                <a href="../相关GPT调研/相关GPT调研.html">
+            
+                    
+                    相关GPT调研
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    相关技术调研
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    第一章：训练微调相关技术
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../Chapter2/微调范式对比.html">
+            
+                <a href="../Chapter2/微调范式对比.html">
+            
+                    
+                    节省显存的微调推理技术对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../Chapter2/大模型微调技术：fine-tune、parameter-efficient fine-tune和prompt-tune.html">
+            
+                <a href="../Chapter2/大模型微调技术：fine-tune、parameter-efficient fine-tune和prompt-tune.html">
+            
+                    
+                    LLM三种微调技术对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../Chapter2/Prompt-Tuning、Instruction-Tuning和Chain-of-Thought.html">
+            
+                <a href="../Chapter2/Prompt-Tuning、Instruction-Tuning和Chain-of-Thought.html">
+            
+                    
+                    LLM三种训练技术对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../Chapter2/思维链.html">
+            
+                <a href="../Chapter2/思维链.html">
+            
+                    
+                    思维链简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    第二章：定制化GPT
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../Chapter1/根据自己数据库让GPT作答.html">
+            
+                <a href="../Chapter1/根据自己数据库让GPT作答.html">
+            
+                    
+                    根据自己数据库让GPT作答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../Chapter1/训练部署自己的羊驼 Alpaca-LoRA.html">
+            
+                <a href="../Chapter1/训练部署自己的羊驼 Alpaca-LoRA.html">
+            
+                    
+                    训练部署自己的羊驼 Alpaca-LoRA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../Chapter1/训练部署自己的ChatGLM-6B.html">
+            
+                <a href="../Chapter1/训练部署自己的ChatGLM-6B.html">
+            
+                    
+                    训练部署自己的ChatGLM-6B
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../Chapter1/Windows+6GB显卡版本和CPU版本的本地部署ChatGLM-6B.html">
+            
+                <a href="../Chapter1/Windows+6GB显卡版本和CPU版本的本地部署ChatGLM-6B.html">
+            
+                    
+                    Windows+6GB显+CPU本地部署ChatGLM-6B.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    第三章：数据底座方法与调研
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../Chapter3/Self-Instruct数据.html">
+            
+                <a href="../Chapter3/Self-Instruct数据.html">
+            
+                    
+                    Self-Instruct自动生成微调数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../Chapter3/学术问答数据集调研.html">
+            
+                <a href="../Chapter3/学术问答数据集调研.html">
+            
+                    
+                    学术问答数据集调研
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <span>
+            
+                    
+                    第四章：其他相关知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="Lamini.html">
+            
+                <a href="Lamini.html">
+            
+                    
+                    Lamini LLM引擎学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4.2" data-path="GPT与知识图谱.html">
+            
+                <a href="GPT与知识图谱.html">
+            
+                    
+                    GPT与知识图谱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="Entailment Trees论文学习笔记.html">
+            
+                <a href="Entailment Trees论文学习笔记.html">
+            
+                    
+                    Entailment Trees论文学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="METGEN论文学习笔记.html">
+            
+                <a href="METGEN论文学习笔记.html">
+            
+                    
+                    METGEN论文学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../技术框架/技术框架.html">
+            
+                <a href="../技术框架/技术框架.html">
+            
+                    
+                    毕设技术框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >GPT与知识图谱</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lamini-llm&#x5F15;&#x64CE;&#x5B66;&#x4E60;">Lamini LLM&#x5F15;&#x64CE;&#x5B66;&#x4E60;</h1>
+<p>&#x76F8;&#x5173;&#x94FE;&#x63A5;&#xFF1A;<a href="https://mp.weixin.qq.com/s/4PYtlyaKktghs5WxEp31_Q" target="_blank">&#x518D;&#x8C08;&#x77E5;&#x8BC6;&#x56FE;&#x8C31;&#x4E0E;ChatGPT&#x5982;&#x4F55;&#x7ED3;&#x5408;&#xFF1A;&#x53C2;&#x6570;&#x5316;&#x4E0E;&#x5F62;&#x5F0F;&#x5316;&#x77E5;&#x8BC6;&#x5E93;&#x7684;&#x73B0;&#x5B9E;&#x95EE;&#x9898;&#x3001;&#x7ED3;&#x5408;&#x8981;&#x7D20;&#x548C;&#x5177;&#x4F53;&#x8DEF;&#x7EBF;</a></p>
+<p><img src="pics/GPT&#x4E0E;&#x77E5;&#x8BC6;&#x56FE;&#x8C31;/image-20230506172627960.png" alt="image-20230506172627960" style="zoom:33%;">  </p>
+<p>&#x77E5;&#x8BC6;&#x56FE;&#x8C31;&#xFF0C;&#x53EF;&#x4EE5;&#x5229;&#x7528;prompt&#xFF0C;&#x53C2;&#x4E0E;&#x5230;&#x5927;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x524D;&#x7684;&#x6570;&#x636E;&#x6784;&#x9020;&#xFF0C;&#x8BAD;&#x7EC3;&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x4EE5;&#x53CA;&#x8BAD;&#x7EC3;&#x540E;&#x63A8;&#x7406;&#x7ED3;&#x679C;&#x7684;&#x7EA6;&#x675F;&#x751F;&#x6210;&#xFF0C;&#x63D0;&#x5347;&#x5927;&#x6A21;&#x578B;&#x7684;&#x6027;&#x80FD;&#x3002;</p>
+<p>&#x5927;&#x6A21;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;prompt&#xFF0C;&#x6765;&#x6267;&#x884C;&#x76F8;&#x5E94;&#x4FE1;&#x606F;&#x63D0;&#x53D6;&#x4EE5;&#x53CA;&#x601D;&#x7EF4;&#x94FE;&#x7684;&#x63A8;&#x7406;&#x4EFB;&#x52A1;&#xFF0C;&#x5F62;&#x5F0F;&#x5316;&#x6210;&#x4E0D;&#x540C;&#x5F62;&#x5F0F;&#x7684;&#x77E5;&#x8BC6;&#x3010;&#x4F8B;&#x5982;&#x4E09;&#x5143;&#x7EC4;&#xFF0C;&#x591A;&#x5143;&#x7EC4;&#x6216;&#x8005;&#x4E8B;&#x4EF6;&#x94FE;&#x6761;&#x3011;&#x3002;</p>
+<hr>
+<h4 id="1-&#x77E5;&#x8BC6;&#x56FE;&#x8C31;vs&#x5927;&#x8BED;&#x8A00;&#x6A21;&#x578B;">1. &#x77E5;&#x8BC6;&#x56FE;&#x8C31;VS&#x5927;&#x8BED;&#x8A00;&#x6A21;&#x578B;</h4>
+<p>&#x76F8;&#x540C;&#x70B9;&#xFF1A;&#x77E5;&#x8BC6;&#x56FE;&#x8C31;VS&#x5927;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x672C;&#x8D28;&#x4E0A;&#x90FD;&#x662F;&#x4E00;&#x79CD;&#x77E5;&#x8BC6;&#x5E93;&#xFF1B;chatgpt&#x9047;&#x5230;&#x7684;&#x4E8B;&#x5B9E;&#x6027;&#x9519;&#x8BEF;&#x548C;&#x65F6;&#x6548;&#x6027;&#xFF0C;&#x77E5;&#x8BC6;&#x56FE;&#x8C31;&#x540C;&#x6837;&#x5B58;&#x5728;&#xFF0C;&#x77E5;&#x8BC6;&#x56FE;&#x8C31;&#x4E5F;&#x9700;&#x8981;&#x89E3;&#x51B3;&#x77E5;&#x8BC6;&#x66F4;&#x65B0;&#x7684;&#x95EE;&#x9898;&#x3002; </p>
+<h5 id="&#x4E0D;&#x540C;&#x70B9;&#xFF1A;">&#x4E0D;&#x540C;&#x70B9;&#xFF1A;</h5>
+<h5 id="&#x77E5;&#x8BC6;&#x56FE;&#x8C31;&#x662F;&#x4E00;&#x79CD;&#x77E5;&#x8BC6;&#x7684;&#x5F62;&#x5F0F;&#x5316;&#x8868;&#x793A;&#x65B9;&#x5F0F;&#xFF0C;&#x5927;&#x8BED;&#x8A00;&#x6A21;&#x578B;chatgpt&#x662F;&#x53C2;&#x6570;&#x5316;&#x7684;&#x77E5;&#x8BC6;&#x3002;">&#x77E5;&#x8BC6;&#x56FE;&#x8C31;&#x662F;&#x4E00;&#x79CD;&#x77E5;&#x8BC6;&#x7684;&#x5F62;&#x5F0F;&#x5316;&#x8868;&#x793A;&#x65B9;&#x5F0F;&#xFF0C;&#x5927;&#x8BED;&#x8A00;&#x6A21;&#x578B;(ChatGPT)&#x662F;&#x53C2;&#x6570;&#x5316;&#x7684;&#x77E5;&#x8BC6;&#x3002;</h5>
+<p>&#x77E5;&#x8BC6;&#x56FE;&#x8C31;&#x662F;&#x4E00;&#x79CD;&#x77E5;&#x8BC6;&#x7684;&#x5F62;&#x5F0F;&#x5316;&#x8868;&#x793A;&#x65B9;&#x5F0F;&#xFF0C;&#x5927;&#x8BED;&#x8A00;&#x6A21;&#x578B;(ChatGPT)&#x662F;&#x53C2;&#x6570;&#x5316;&#x7684;&#x77E5;&#x8BC6;&#x3002;</p>
+<p>&#x7ED3;&#x6784;&#x5316;&#x77E5;&#x8BC6;&#x5F88;&#x96BE;&#x6784;&#x5EFA;(&#x56E0;&#x4E3A;&#x8981;&#x8BBE;&#x8BA1;&#x77E5;&#x8BC6;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x7CFB;)&#xFF0C;&#x4F46;&#x6613;&#x4E8E;&#x63A8;&#x7406;(&#x56E0;&#x4E3A;&#x6709;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;)&#xFF0C;&#x975E;&#x7ED3;&#x6784;&#x5316;&#x77E5;&#x8BC6;&#x6613;&#x4E8E;&#x6784;&#x5EFA;(&#x76F4;&#x63A5;&#x5B58; &#x8D77;&#x6765;&#x5C31;&#x884C;)&#xFF0C;&#x4F46;&#x5F88;&#x96BE;&#x7528;&#x4E8E;&#x63A8;&#x7406;(&#x6CA1;&#x6709;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;)&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lamini.html" class="navigation navigation-prev " aria-label="Previous page: Lamini LLM引擎学习">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Entailment Trees论文学习笔记.html" class="navigation navigation-next " aria-label="Next page: Entailment Trees论文学习笔记">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GPT与知识图谱","level":"1.4.4.2","depth":3,"next":{"title":"Entailment Trees论文学习笔记","level":"1.4.4.3","depth":3,"path":"Chapter4/Entailment Trees论文学习笔记.md","ref":"Chapter4/Entailment Trees论文学习笔记.md","articles":[]},"previous":{"title":"Lamini LLM引擎学习","level":"1.4.4.1","depth":3,"path":"Chapter4/Lamini.md","ref":"Chapter4/Lamini.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter4/GPT与知识图谱.md","mtime":"2023-05-06T10:13:42.558Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T03:46:06.651Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
